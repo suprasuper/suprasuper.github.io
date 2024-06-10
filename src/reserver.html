@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="w-full bg-white shadow-md shadow-vert-300">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="/assets/logo.png" alt=""
+                        class="object-cover w-48"></a>
+            </div>
+            <!-- Menu Section -->
+            <nav class="menu">
+                <ul class="flex space-x-4 font-pfd">
+                    <li><a href="index.html" class="text-gray-700 text-xl hover:text-vert-100  uppercase">Actualités</a>
+                    </li>
+                    <li><a href="films.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nos films</a>
+                    </li>
+                    <li><a href="reserver.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">réserver</a></li>
+                    <li><a href="contact.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="container mx-auto mt-24 flex-grow">
+        <div class="grid grid-cols-1 gap-y-14 gap-x-10">
+            <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col">
+                <div class="px-6 py-4 flex-1">
+                    <div class="font-bold font-pfd text-xl uppercase mb-2">CETTE SEMAINE</div>
+                    <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col mt-12">
+                        <div class="px-6 py-4 flex-1">
+                            <div class="font-bold text-xl mb-2 font-pfd">Suspendisse accumsan tristique mattis. Praesent.</div>
+                            <p class="text-gray-700 text-base font-poppins">
+                                Cras in vulputate dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam luctus felis non arcu lacinia, nec tincidunt neque porta. Morbi sit amet lectus id sem mollis fringilla non nec dolor. Sed commodo dignissim dui, sit amet faucibus diam tristique a. Ut feugiat felis ut ante rutrum, mattis scelerisque ex ornare. Aliquam quis lorem tellus. Curabitur non rhoncus leo. Nulla facilisi. Nullam eget finibus ligula, sed congue magna. Ut ut semper leo, id dignissim dolor. Cras sit amet pretium massa. Aenean elementum purus at felis accumsan efficitur. Etiam quis eros magna.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2 font-poppins">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <button id="decrement-btn"
+                                        class="flex justify-center items-center w-8 h-8 rounded-full text-white focus:outline-none bg-vert-400 hover:bg-gray-500">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="counter" class="text-4xl font-bold mx-4">1</span>
+                                    <button id="increment-btn"
+                                        class="flex justify-center items-center w-8 h-8 bg-vert-100 rounded-full text-white focus:outline-none bg-indigo-500 hover:bg-indigo-600">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="inline-block rounded bg-vert-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-vert-100 transition duration-150 ease-in-out hover:bg-vert-100 hover:shadow-vert-300 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">réserver</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col mt-12">
+                        <div class="px-6 py-4 flex-1">
+                            <div class="font-bold text-xl mb-2 font-pfd">Suspendisse accumsan tristique mattis. Praesent.</div>
+                            <p class="text-gray-700 text-base font-poppins">
+                                Cras in vulputate dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam luctus felis non arcu lacinia, nec tincidunt neque porta. Morbi sit amet lectus id sem mollis fringilla non nec dolor. Sed commodo dignissim dui, sit amet faucibus diam tristique a. Ut feugiat felis ut ante rutrum, mattis scelerisque ex ornare. Aliquam quis lorem tellus. Curabitur non rhoncus leo. Nulla facilisi. Nullam eget finibus ligula, sed congue magna. Ut ut semper leo, id dignissim dolor. Cras sit amet pretium massa. Aenean elementum purus at felis accumsan efficitur. Etiam quis eros magna.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2 font-poppins">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <button id="decrement-btn"
+                                        class="flex justify-center items-center w-8 h-8 rounded-full text-white focus:outline-none bg-vert-400 hover:bg-gray-500">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="counter" class="text-4xl font-bold mx-4">1</span>
+                                    <button id="increment-btn"
+                                        class="flex justify-center items-center w-8 h-8 bg-vert-100 rounded-full text-white focus:outline-none bg-indigo-500 hover:bg-indigo-600">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="inline-block rounded bg-vert-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-vert-100 transition duration-150 ease-in-out hover:bg-vert-100 hover:shadow-vert-300 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">réserver</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col mt-12">
+                        <div class="px-6 py-4 flex-1">
+                            <div class="font-bold text-xl mb-2 font-pfd">Suspendisse accumsan tristique mattis. Praesent.</div>
+                            <p class="text-gray-700 text-base font-poppins">
+                                Cras in vulputate dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam luctus felis non arcu lacinia, nec tincidunt neque porta. Morbi sit amet lectus id sem mollis fringilla non nec dolor. Sed commodo dignissim dui, sit amet faucibus diam tristique a. Ut feugiat felis ut ante rutrum, mattis scelerisque ex ornare. Aliquam quis lorem tellus. Curabitur non rhoncus leo. Nulla facilisi. Nullam eget finibus ligula, sed congue magna. Ut ut semper leo, id dignissim dolor. Cras sit amet pretium massa. Aenean elementum purus at felis accumsan efficitur. Etiam quis eros magna.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2 font-poppins">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <button id="decrement-btn"
+                                        class="flex justify-center items-center w-8 h-8 rounded-full text-white focus:outline-none bg-vert-400 hover:bg-gray-500">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="counter" class="text-4xl font-bold mx-4">1</span>
+                                    <button id="increment-btn"
+                                        class="flex justify-center items-center w-8 h-8 bg-vert-100 rounded-full text-white focus:outline-none bg-indigo-500 hover:bg-indigo-600">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="inline-block rounded bg-vert-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-vert-100 transition duration-150 ease-in-out hover:bg-vert-100 hover:shadow-vert-300 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">réserver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+           
+            
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-vert-100 py-8 font-poppins mt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="mb-4 md:mb-0 font-poppins">
+                    <h3 class="text-lg font-semibold mb-2 ">Liens rapides</h3>
+                    <ul class="font-poppins">
+                        <li><a href="#" class="hover:text-gray-300 ">Accueil</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Actualités</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mb-4 md:mb-0 font-poppins">
+                    <h3 class="text-lg font-semibold mb-2 font-poppins">Réseaux sociaux</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-300">Facebook</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Twitter</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Newsletter</h3>
+                    <p>Abonnez-vous à notre newsletter pour rester à jour.</p>
+                    <form class="mt-2">
+                        <input type="email" placeholder="Votre adresse email"
+                            class="bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:bg-gray-600">
+                        <button type="submit"
+                            class="bg-vert-200 text-white px-4 py-2 rounded-lg ml-2 hover:bg-blue-600">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

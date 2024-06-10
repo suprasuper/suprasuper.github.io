@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Gump</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="w-full bg-white shadow-md shadow-vert-300">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="/assets/logo.png" alt=""
+                        class="object-cover w-48"></a>
+            </div>
+            <!-- Menu Section -->
+            <nav class="menu">
+                <ul class="flex space-x-4 font-pfd">
+                    <li><a href="index.html" class="text-gray-700 text-xl hover:text-vert-100  uppercase">Actualités</a>
+                    </li>
+                    <li><a href="films.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nos films</a>
+                    </li>
+                    <li><a href="reserver.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">réserver</a></li>
+                    <li><a href="contact.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="container mx-auto mt-24 flex-grow">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex h-96">
+            <div class="w-2/5 h-full bg-center bg-contain bg-no-repeat rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                 style="background-image: url('/assets/forrestgump.jpg')" title="Forrest Gump Affiche">
+            </div>
+            <div class="border-r border-b border-l border-vert-200 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div class="mb-8">
+                <p class="flex items-center uppercase font-poppins text-3xl">
+                  Forrest gump
+                </p>
+                <div class="uppercase font-poppins text-3xl">TOM HANKS Robin Wright</div>
+                <p class="font-poppins text-xl text-base border-t-2 border-vert-200 pt-12">Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.</p>
+              </div>
+              <div class="flex items-center">
+                <button class="font-poppins inline-block rounded bg-vert-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-vert-100 transition duration-150 ease-in-out hover:bg-vert-100 hover:shadow-vert-300 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">réserver</button>
+              </div>
+            </div>
+          </div>
+          
+          
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-vert-100 py-8 font-poppins mt-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="mb-4 md:mb-0 font-poppins">
+                    <h3 class="text-lg font-semibold mb-2 ">Liens rapides</h3>
+                    <ul class="font-poppins">
+                        <li><a href="#" class="hover:text-gray-300 ">Accueil</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Actualités</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mb-4 md:mb-0 font-poppins">
+                    <h3 class="text-lg font-semibold mb-2 font-poppins">Réseaux sociaux</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-300">Facebook</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Twitter</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Newsletter</h3>
+                    <p>Abonnez-vous à notre newsletter pour rester à jour.</p>
+                    <form class="mt-2">
+                        <input type="email" placeholder="Votre adresse email"
+                            class="bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:bg-gray-600">
+                        <button type="submit"
+                            class="bg-vert-200 text-white px-4 py-2 rounded-lg ml-2 hover:bg-blue-600">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
