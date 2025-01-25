@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./menumobile.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités</title>
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="w-full bg-white shadow-md shadow-vert-300">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <!-- Logo Section -->
+  
+<body class="bg-grey-100 w-max ">
+
+    <header class="shadow-md shadow-vert-300">
+        <nav class="navbar">
             <div class="logo">
-                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="/assets/logo.png" alt="" class="object-cover w-48"></a>
+                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="./assets/logo.png" alt="" class="object-cover w-48"></a>
             </div>
-            <!-- Menu Section -->
-            <nav class="menu">
-                <ul class="flex space-x-4 font-pfd">
-                    <li><a href="index.html" class="text-gray-700 text-xl hover:text-vert-100  uppercase">Actualités</a></li>
-                    <li><a href="films.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nos films</a></li>
-                    <li><a href="reserver.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">réserver</a></li>
-                    <li><a href="contact.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nous contacter</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-links font-pfd">
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./index.html">Actualités</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./films.html">Nos films</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./reserver.html">Réserver</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./contact.html">Nous contacter</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <button><span>&#9776;</span></button>
+            </div>
+        </nav>
     </header>
+    
+        
 
+        
+     
+    <div class=" w-max">
     <!-- Page Content -->
-    <main class="container mx-auto mt-24">
-        <div class="grid grid-cols-2 gap-y-14 gap-x-10">
-            <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col">
-                <img class="w-full object-cover" src="/assets/cinema.jpg" alt="Sunset in the mountains">
+    <main class="  bg-grey-100 w-auto mx-auto mt-24 ">
+        <div class="">
+        <div class="grid  gap-y-14 gap-x-10  grille">
+            <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col mx-auto">
+                <img class="w-full object-cover" src="./assets/cinema.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4 flex-1">
                     <div class="font-bold font-pfd text-xl mb-2">Vestibulum eu porta dui, vel.</div>
                     <p class="text-gray-700 text-base font-poppins">
@@ -47,7 +54,7 @@
                 </div>
             </div>
             <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col">
-                <img class="w-full object-cover" src="/assets/cinema.jpg" alt="Sunset in the mountains">
+                <img class="w-full object-cover" src="./assets/cinema.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4 flex-1">
                     <div class="font-bold text-xl mb-2 font-pfd">Suspendisse accumsan tristique mattis. Praesent.</div>
                     <p class="text-gray-700 text-base font-poppins">
@@ -61,7 +68,7 @@
                 </div>
             </div>
             <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col">
-                <img class="w-full object-cover" src="/assets/cinema.jpg" alt="Sunset in the mountains">
+                <img class="w-full object-cover" src="./assets/cinema.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4 flex-1">
                     <div class="font-bold  text-xl mb-2 font-pfd">Vivamus ac commodo magna. Aliquam.</div>
                     <p class="text-gray-700 font-poppins text-base">
@@ -75,7 +82,7 @@
                 </div>
             </div>
             <div class="bg-white rounded overflow-hidden shadow-lg shadow-vert-300 flex flex-col">
-                <img class="w-full object-cover" src="/assets/cinema.jpg" alt="Sunset in the mountains">
+                <img class="w-full object-cover" src="./assets/cinema.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4 flex-1 font-pfd">
                     <div class="font-bold text-xl mb-2 ">Cras quis libero in eros.</div>
                     <p class="text-gray-700 text-base font-poppins">
@@ -91,8 +98,8 @@
                 </div>
             </div>
         </div>
+        </div>
     </main>
-
     
 
     <footer class="bg-vert-100  py-8 font-poppins mt-20">

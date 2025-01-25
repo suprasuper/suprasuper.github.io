@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+    <script src="./menumobile.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réserver</title>
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link
@@ -15,26 +16,21 @@
 
 <body class="bg-gray-100 flex flex-col min-h-screen">
 
-    <!-- Header -->
-    <header class="w-full bg-white shadow-md shadow-vert-300">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <!-- Logo Section -->
+    <header class="shadow-md shadow-vert-300">
+        <nav class="navbar">
             <div class="logo">
-                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="/assets/logo.png" alt=""
-                        class="object-cover w-48"></a>
+                <a href="index.html" class="text-xl font-bold text-blue-600"><img src="./assets/logo.png" alt="" class="object-cover w-48"></a>
             </div>
-            <!-- Menu Section -->
-            <nav class="menu">
-                <ul class="flex space-x-4 font-pfd">
-                    <li><a href="index.html" class="text-gray-700 text-xl hover:text-vert-100  uppercase">Actualités</a>
-                    </li>
-                    <li><a href="films.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nos films</a>
-                    </li>
-                    <li><a href="reserver.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">réserver</a></li>
-                    <li><a href="contact.html" class="text-gray-700 text-xl hover:text-vert-100 uppercase">Nous contacter</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-links font-pfd">
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./index.html">Actualités</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./films.html">Nos films</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./reserver.html">Réserver</a></li>
+                <li><a class="text-gray-700 text-xl hover:text-vert-100  uppercase" href="./contact.html">Nous contacter</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <button><span>&#9776;</span></button>
+            </div>
+        </nav>
     </header>
 
     <!-- Page Content -->
